@@ -1,0 +1,85 @@
+@import url('./_variables.css');
+
+.subscriptions {
+    background: url('../images/background-movies-series.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1.5rem;
+}
+
+.title {
+    font-size: 2rem;
+    text-align: center;
+}
+
+.subsciption__cards {
+    margin: 2.5rem 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 80px;
+}
+
+.card {
+    min-height: 600px;
+    padding: 40px 60px;
+    background: var(--card-bg-color);
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card__plan {
+    width: 100%;
+    margin: 0 0 16px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.plan {
+    font-size: 1.5rem;
+    font-weight: 800;
+}
+
+.price {
+    font-size: 2rem;
+    font-weight: bolder;
+    color: var(--secondary-color);
+}
+
+.price span {
+    font-size: 1rem;
+    font-weight: lighter;
+    color: var(--text-color);
+}
+
+.details {
+    margin: 0;
+    padding: 0;
+    list-style: '➕';
+}
+
+.details li {
+    font-size: 1.25rem;
+    padding-left: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+button.subscribe {
+    padding: 1rem 2.5rem;
+    border: none;
+    border-radius: 2rem;
+    color: var(--text-color);
+    background: var(--btn-bg-color-gradient);
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
