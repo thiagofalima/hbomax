@@ -1,0 +1,46 @@
+@import url('./_variables.css');
+
+.header {
+    width: 100%;
+    padding: 100px 0 300px;
+}
+
+.header__content {
+    width: 100%;
+    padding: 0 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2.5rem;
+}
+
+.header__channels {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.header__channels img {height: 100%;}
+
+.header__title span {
+    display: block;
+    font-size: 2rem;
+    font-weight: lighter;
+}
+
+.header__title {
+    text-align: center;
+    font-size: 3rem;
+}
+
+
+.divider {
+    width: 70%;
+    max-width: 700px;
+    height: 5px;
+    background: var(--divider-bg-color);
+}
