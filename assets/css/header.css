@@ -44,3 +44,59 @@
     height: 5px;
     background: var(--divider-bg-color);
 }
+
+.offer p {
+    font-size: 1.25rem;
+}
+
+.offer .price {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.offer .price span {
+    font-size: 1rem;
+    font-weight: lighter;
+}
+
+.header__sign-link {
+    padding: 1rem 2.5rem;
+    color: var(--text-color);
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: bold;
+    letter-spacing: 4px;
+    background: var(--btn-bg-color-gradient);
+    border-radius: 2rem;
+    animation: wiggle 2.2s linear 1s infinite;
+}
+
+@keyframes wiggle {
+    0%, 10% {
+        transform: rotate(0);
+    }
+    15% {
+        transform:rotate(-15deg);
+    }
+    20% {
+        transform:rotate(10deg);
+    }
+    25% {
+        transform:rotate(-10deg);
+    }
+    30% {
+        transform:rotate(10deg);
+    }
+    35% {
+        transform:rotate(-10deg);
+    }
+    40%, 100% {
+        transform:rotate(0);
+    }
+}
+
+.detail {
+    font-size: 1rem;
+    font-weight: 300;
+    text-align: center;
+}
