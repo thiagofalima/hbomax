@@ -1,9 +1,23 @@
 @import url('./_variables.css');
 
+@keyframes bg-transition {
+    0%, 100% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 50% 100%;
+    }
+}
+
 .header {
     width: 100%;
     padding: 100px 0 300px;
+    background: linear-gradient(-45deg, #56125b, #0f0f10, #271e6e);
+    background-size: 400% 400%;
+    animation: bg-transition 10s ease-in-out infinite alternate;
 }
+
 
 .header__content {
     width: 100%;
@@ -67,8 +81,15 @@
     font-weight: bold;
     letter-spacing: 4px;
     background: var(--btn-bg-color-gradient);
+    outline: 3px solid transparent;
     border-radius: 2rem;
+    transition: background 1s, outline-color 1s, transform 1s;
     animation: wiggle 2.2s linear 1s infinite;
+}
+
+.header__sign-link:hover {
+    background: transparent;
+    outline-color: var(--secondary-color);
 }
 
 @keyframes wiggle {
@@ -99,4 +120,11 @@
     font-size: 1rem;
     font-weight: 300;
     text-align: center;
+}
+
+.header::after {
+    content: '';
+    width: 100%;
+    height: 30%;
+    background: linear-gradient(var(--primary-color), transparent);
 }
