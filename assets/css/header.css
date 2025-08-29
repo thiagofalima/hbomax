@@ -13,6 +13,7 @@
 .header {
     width: 100%;
     padding: 100px 0 300px;
+    position: relative;
     background: linear-gradient(-45deg, #56125b, #0f0f10, #271e6e);
     background-size: 400% 400%;
     animation: bg-transition 10s ease-in-out infinite alternate;
@@ -83,7 +84,7 @@
     background: var(--btn-bg-color-gradient);
     outline: 3px solid transparent;
     border-radius: 2rem;
-    transition: background 1s, outline-color 1s, transform 1s;
+    transition: background 1s, outline-color 1s ease-in;
     animation: wiggle 2.2s linear 1s infinite;
 }
 
@@ -128,4 +129,6 @@
     height: 250px;
     display: block;
     background: linear-gradient(0deg, var(--primary-color), transparent);
+    position: absolute;
+    bottom: 0;
 }
