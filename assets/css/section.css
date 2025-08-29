@@ -24,8 +24,9 @@
     justify-content: space-between;
     align-items: center;
     gap: 80px;
+    perspective: 2000px;
+    perspective-origin: top;
 }
-
 .card {
     min-height: 600px;
     padding: 40px 60px;
@@ -34,7 +35,21 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    perspective: 10px;
+    transition: transform 1s ease-in-out;
+
 }
+
+.subsciption__cards:has(.card:nth-child(1):hover)
+  .card:nth-child(2) {
+  transform: rotateY(-45deg);
+}
+
+.subsciption__cards:has(.card:nth-child(2):hover)
+  .card:nth-child(1) {
+  transform: rotateY(45deg);
+}
+
 
 .card__plan {
     width: 100%;
