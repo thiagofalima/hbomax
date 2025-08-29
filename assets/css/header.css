@@ -74,23 +74,31 @@
     font-weight: lighter;
 }
 
-.header__sign-link {
+
+.header__sign-link, 
+button.subscribe {
     padding: 1rem 2.5rem;
     color: var(--text-color);
     text-transform: uppercase;
     text-decoration: none;
     font-weight: bold;
     letter-spacing: 4px;
+    border:none;
+    border-radius: 2rem;
     background: var(--btn-bg-color-gradient);
     outline: 3px solid transparent;
-    border-radius: 2rem;
-    transition: background 1s, outline-color 1s ease-in;
-    animation: wiggle 2.2s linear 1s infinite;
+    transition: background 1s, outline 1s, transform 1s;
+    background-size: 250%;
 }
 
-.header__sign-link:hover {
-    background: transparent;
-    outline-color: var(--secondary-color);
+.header__sign-link {animation: wiggle 2.2s linear 1s infinite;}
+
+.header__sign-link:hover,
+button.subscribe:hover {
+    background-color: transparent;
+    background-position: 100%;
+    outline: 2px solid var(--secondary-color);
+    transform: scale(1.05);
 }
 
 @keyframes wiggle {

@@ -72,14 +72,3 @@
     padding-left: 1rem;
     margin-bottom: 1.5rem;
 }
-
-button.subscribe {
-    padding: 1rem 2.5rem;
-    border: none;
-    border-radius: 2rem;
-    color: var(--text-color);
-    background: var(--btn-bg-color-gradient);
-    font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: 4px;
-}
