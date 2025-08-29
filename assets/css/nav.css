@@ -8,6 +8,8 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: sticky;
+    top: 0;
 }
 
 
@@ -36,6 +38,7 @@
 .sign {
     background: var(--tertiary-color);
     border-radius: 2rem;
+    text-decoration: none;
     transition: background 1s,
                 color 1s;
 }
