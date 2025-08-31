@@ -111,19 +111,19 @@ section {
 .universe--ucl {background: url('../images/UCL-Hover.webp');}
 
 .universe {
-
-    border-radius: 1rem;
+    border-radius: 16px;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    border: 2px solid transparent;
-    transition: transform .8s, background .8s, border 1s;
+    /* border: 2px solid transparent; */
+    transition: transform 0.8s, background 0.8s, border 1s;
 }
 
 .universe img {
     width: 100%;
     object-fit: cover;
     object-position: center;
+    box-shadow: inset 1em 2em black;
     transition: opacity 2s;
 }
 
