@@ -1,5 +1,10 @@
 @import url('./_variables.css');
 
+section {
+    margin: 100px auto;
+    padding: 1.5rem;
+}
+
 .subscriptions {
     background: url('../images/background-movies-series.png');
     background-size: cover;
@@ -15,6 +20,7 @@
 .title {
     font-size: 2rem;
     text-align: center;
+    margin-bottom: 2rem;
 }
 
 .subsciption__cards {
@@ -87,3 +93,45 @@
     padding-left: 1rem;
     margin-bottom: 1.5rem;
 }
+
+/* Universes */
+
+.container-universes {
+    padding: 1.5rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2.5rem;
+}
+
+.universe--hbo {background: url('../images/hbo-hover_0.webp');}
+.universe--max {background: url('../images/MAX-Hover.webp');}
+.universe--dc {background: url('../images/DC-Hover.webp');}
+.universe--wb {background: url('../images/WB-Hover.webp');}
+.universe--cn {background: url('../images/CN-Hover.png');}
+.universe--ucl {background: url('../images/UCL-Hover.webp');}
+
+.universe {
+
+    border-radius: 1rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border: 2px solid transparent;
+    transition: transform .8s, background .8s, border 1s;
+}
+
+.universe img {
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    transition: opacity 2s;
+}
+
+.universe:hover {
+    transform: scale(1.05);
+    border: 2px solid var(--tertiary-color);
+}
+
+
+.universe img:hover {opacity: 0;}
+
