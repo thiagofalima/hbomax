@@ -81,7 +81,8 @@
 
 
 .header__sign-link,
-button.subscribe {
+button.subscribe,
+.button {
     padding: 1rem 2.5rem;
     color: var(--text-color);
     text-transform: uppercase;
@@ -101,7 +102,8 @@ button.subscribe {
 }
 
 .header__sign-link:hover,
-button.subscribe:hover {
+button.subscribe:hover,
+.button:hover {
     background-color: transparent;
     background-position: 100%;
     outline: 2px solid var(--secondary-color);
