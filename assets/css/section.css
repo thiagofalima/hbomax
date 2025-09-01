@@ -33,6 +33,8 @@ section {
     perspective: 2000px;
     perspective-origin: top;
 }
+
+
 .card {
     min-height: 600px;
     padding: 40px 60px;
@@ -46,14 +48,12 @@ section {
 
 }
 
-.subsciption__cards:has(.card:nth-child(1):hover)
-  .card:nth-child(2) {
-  transform: rotateY(-45deg);
+.subsciption__cards:has(.card:nth-child(1):hover) .card:nth-child(2) {
+    transform: rotateY(-45deg);
 }
 
-.subsciption__cards:has(.card:nth-child(2):hover)
-  .card:nth-child(1) {
-  transform: rotateY(45deg);
+.subsciption__cards:has(.card:nth-child(2):hover) .card:nth-child(1) {
+    transform: rotateY(45deg);
 }
 
 
@@ -103,19 +103,36 @@ section {
     gap: 2.5rem;
 }
 
-.universe--hbo {background: url('../images/hbo-hover_0.webp');}
-.universe--max {background: url('../images/MAX-Hover.webp');}
-.universe--dc {background: url('../images/DC-Hover.webp');}
-.universe--wb {background: url('../images/WB-Hover.webp');}
-.universe--cn {background: url('../images/CN-Hover.png');}
-.universe--ucl {background: url('../images/UCL-Hover.webp');}
+.universe--hbo {
+    background: url('../images/hbo-hover_0.webp');
+}
+
+.universe--max {
+    background: url('../images/MAX-Hover.webp');
+}
+
+.universe--dc {
+    background: url('../images/DC-Hover.webp');
+}
+
+.universe--wb {
+    background: url('../images/WB-Hover.webp');
+}
+
+.universe--cn {
+    background: url('../images/CN-Hover.png');
+}
+
+.universe--ucl {
+    background: url('../images/UCL-Hover.webp');
+}
 
 .universe {
     border-radius: 16px;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    /* border: 2px solid transparent; */
+    border: 2px solid transparent;
     transition: transform 0.8s, background 0.8s, border 1s;
 }
 
@@ -132,5 +149,42 @@ section {
     border: 2px solid var(--tertiary-color);
 }
 
-.universe img:hover {opacity: 0;}
+.universe img:hover {
+    opacity: 0;
+}
 
+/* Make it responsive*/
+
+@media screen and (max-width: 1140px) {
+    .subsciption__cards {
+        flex-direction: column;
+    }
+
+}
+
+@media screen and (max-width: 800px) {
+    .container-universes {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 502px) {
+    .container {
+        padding: 0;
+    }
+
+    .card__plan {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .plan__details .details li {
+        font-size: 1rem;
+    }
+
+    .container-universes {
+        grid-template-columns: repeat(6, 100%);
+        grid-auto-flow: column;
+        overflow: auto hidden;
+    }
+}

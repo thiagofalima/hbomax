@@ -22,7 +22,9 @@
     width: 100%;
 }
 
-.navbar__links {margin-right: 2rem;}
+.navbar__links {
+    margin-right: 2rem;
+}
 
 .navbar__link {
     padding: .5rem 1.625rem;
@@ -34,14 +36,16 @@
     border: none;
 }
 
-.login {background: transparent;}
+.login {
+    background: transparent;
+}
 
 .sign {
     background: var(--tertiary-color);
     border-radius: 2rem;
     text-decoration: none;
     transition: background 1s,
-                color 1s;
+        color 1s;
 }
 
 .sign:hover {
@@ -50,4 +54,16 @@
 }
 
 
+/* Make it responsive */
+@media screen and (max-width: 502px) {
+    .navbar {
+        padding: 2rem;
+        text-align: center;
+        flex-direction: column;
+        gap: 2rem;
+    }
 
+    .navbar img {
+        width: 70%;
+    }
+}

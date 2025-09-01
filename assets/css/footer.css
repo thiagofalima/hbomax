@@ -33,3 +33,21 @@ footer p {
     align-items: center;
     gap: 2rem;
 }
+
+/* Make it responsive */
+@media screen and (max-width: 502px) {
+
+    .footer {
+        padding: 1.5rem;
+    }
+
+    .footer__links {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .footer .footer__social {
+        gap: 3rem;
+    }
+}

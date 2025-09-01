@@ -1,7 +1,9 @@
 @import url('./_variables.css');
 
 @keyframes bg-transition {
-    0%, 100% {
+
+    0%,
+    100% {
         background-position: 0% 50%;
     }
 
@@ -34,12 +36,14 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     gap: 1.5rem;
 }
 
-.header__channels img {height: 100%;}
+.header__channels img {
+    height: 100%;
+}
 
 .header__title span {
     display: block;
@@ -76,7 +80,7 @@
 }
 
 
-.header__sign-link, 
+.header__sign-link,
 button.subscribe {
     padding: 1rem 2.5rem;
     color: var(--text-color);
@@ -84,7 +88,7 @@ button.subscribe {
     text-decoration: none;
     font-weight: bold;
     letter-spacing: 4px;
-    border:none;
+    border: none;
     border-radius: 2rem;
     background: var(--btn-bg-color-gradient);
     outline: 3px solid transparent;
@@ -92,7 +96,9 @@ button.subscribe {
     background-size: 250%;
 }
 
-.header__sign-link {animation: wiggle 2.2s linear 1s infinite;}
+.header__sign-link {
+    animation: wiggle 2.2s linear 1s infinite;
+}
 
 .header__sign-link:hover,
 button.subscribe:hover {
@@ -103,26 +109,35 @@ button.subscribe:hover {
 }
 
 @keyframes wiggle {
-    0%, 10% {
+
+    0%,
+    10% {
         transform: rotate(0);
     }
+
     15% {
-        transform:rotate(-15deg);
+        transform: rotate(-15deg);
     }
+
     20% {
-        transform:rotate(10deg);
+        transform: rotate(10deg);
     }
+
     25% {
-        transform:rotate(-10deg);
+        transform: rotate(-10deg);
     }
+
     30% {
-        transform:rotate(10deg);
+        transform: rotate(10deg);
     }
+
     35% {
-        transform:rotate(-10deg);
+        transform: rotate(-10deg);
     }
-    40%, 100% {
-        transform:rotate(0);
+
+    40%,
+    100% {
+        transform: rotate(0);
     }
 }
 
